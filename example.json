@@ -1,0 +1,229 @@
+{
+  "search_metadata": {
+    "id": "68b06b00ff3b7a080c53c70f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/faaa5b8efcd5dfe7/68b06b00ff3b7a080c53c70f.json",
+    "created_at": "2025-08-28 14:43:12 UTC",
+    "processed_at": "2025-08-28 14:43:12 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhoeEgoyMDI1LTEyLTI0agcIARIDWVlacgcIARIDUEVLGh4SCjIwMjYtMDEtMDJqBwgBEgNQRUtyBwgBEgNZWVpCAQFIAXABmAEB&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/faaa5b8efcd5dfe7/68b06b00ff3b7a080c53c70f.html",
+    "prettify_html_file": "https://serpapi.com/searches/faaa5b8efcd5dfe7/68b06b00ff3b7a080c53c70f.prettify",
+    "total_time_taken": 1.03
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "departure_id": "YYZ",
+    "arrival_id": "PEK",
+    "outbound_date": "2025-12-24",
+    "return_date": "2026-01-02",
+    "currency": "USD"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-24 20:20"
+          },
+          "arrival_airport": {
+            "name": "Vancouver International Airport",
+            "id": "YVR",
+            "time": "2025-12-24 22:20"
+          },
+          "duration": 300,
+          "airplane": "Boeing 787",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 125",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 200 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Vancouver International Airport",
+            "id": "YVR",
+            "time": "2025-12-25 13:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2025-12-26 18:20"
+          },
+          "duration": 770,
+          "airplane": "Boeing 787",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 29",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 434 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 910,
+          "name": "Vancouver International Airport",
+          "id": "YVR",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1980,
+      "carbon_emissions": {
+        "this_flight": 635000,
+        "typical_for_this_route": 890000,
+        "difference_percent": -29
+      },
+      "price": 1764,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+      "departure_token": "WyJDalJJZHpkTFVDMWFNMWx1YWxsQlEyWjFUbEZDUnkwdExTMHRMUzB0TFMxNWJHeHFNMEZCUVVGQlIybDNZWGRCVEdOMFFWZEJFZ3BCUXpFeU5YeEJRekk1R2dzSTJPRUtFQUlhQTFWVFJEZ2NjTmpoQ2c9PSIsW1siWVlaIiwiMjAyNS0xMi0yNCIsIllWUiIsbnVsbCwiQUMiLCIxMjUiXSxbIllWUiIsIjIwMjUtMTItMjUiLCJQRUsiLG51bGwsIkFDIiwiMjkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2025-12-24 11:40"
+          },
+          "arrival_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2025-12-25 16:50"
+          },
+          "duration": 910,
+          "airplane": "Boeing 777",
+          "airline": "Korean Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+          "travel_class": "Economy",
+          "flight_number": "KE 74",
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 658 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2025-12-25 20:50"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2025-12-25 22:15"
+          },
+          "duration": 145,
+          "airplane": "Boeing 737",
+          "airline": "Korean Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+          "travel_class": "Economy",
+          "flight_number": "KE 853",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 97 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 240,
+          "name": "Incheon International Airport",
+          "id": "ICN"
+        }
+      ],
+      "total_duration": 1295,
+      "carbon_emissions": {
+        "this_flight": 756000,
+        "typical_for_this_route": 890000,
+        "difference_percent": -15
+      },
+      "price": 1863,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+      "departure_token": "WyJDalJJZHpkTFVDMWFNMWx1YWxsQlEyWjFUbEZDUnkwdExTMHRMUzB0TFMxNWJHeHFNMEZCUVVGQlIybDNZWGRCVEdOMFFWZEJFZ3BMUlRjMGZFdEZPRFV6R2dzSTRhNExFQUlhQTFWVFJEZ2NjT0d1Q3c9PSIsW1siWVlaIiwiMjAyNS0xMi0yNCIsIklDTiIsbnVsbCwiS0UiLCI3NCJdLFsiSUNOIiwiMjAyNS0xMi0yNSIsIlBFSyIsbnVsbCwiS0UiLCI4NTMiXV1d"
+    }
+],
+  "other_flights": [
+  {
+    "flights": [
+      {
+        "departure_airport": { "name": "Toronto Pearson International Airport", "id": "YYZ", "time": "2025-12-24 11:40" },
+        "arrival_airport": { "name": "Incheon International Airport", "id": "ICN", "time": "2025-12-25 16:50" },
+        "duration": 910,
+        "airplane": "Boeing 777",
+        "airline": "Korean Air",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+        "travel_class": "Economy",
+        "flight_number": "KE 74",
+        "legroom": "33 in",
+        "extensions": ["Above average legroom (33 in)", "In-seat power & USB outlets", "On-demand video", "Carbon emissions estimate: 658 kg"]
+      },
+      {
+        "departure_airport": { "name": "Incheon International Airport", "id": "ICN", "time": "2025-12-26 08:20" },
+        "arrival_airport": { "name": "Beijing Capital International Airport", "id": "PEK", "time": "2025-12-26 09:40" },
+        "duration": 140,
+        "airplane": "Airbus A330",
+        "airline": "Asiana Airlines",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OZ.png",
+        "travel_class": "Economy",
+        "flight_number": "OZ 331",
+        "legroom": "31 in",
+        "extensions": ["Average legroom (31 in)", "In-seat power outlet", "On-demand video", "Carbon emissions estimate: 94 kg"]
+      }
+    ],
+    "layovers": [{ "duration": 930, "name": "Incheon International Airport", "id": "ICN", "overnight": true }],
+    "total_duration": 1980,
+    "carbon_emissions": { "this_flight": 753000, "typical_for_this_route": 890000, "difference_percent": -15 },
+    "price": 2044,
+    "type": "Round trip",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+    "departure_token": "demo"
+  }
+],
+  "price_insights": {
+  "lowest_price": 1764,
+  "price_level": "typical",
+  "typical_price_range": [1250, 2050],
+  "price_history": [[1751169600,1694],[1751256000,1698]]
+},
+  "airports": [
+  {
+    "departure": [
+      { "airport": { "id": "YYZ", "name": "Toronto Pearson International Airport" }, "city": "Toronto", "country": "Canada", "country_code": "CA",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWPEoHJ9ZdKzv94rrhqqT-m_aOLtacPBnX8s8Fd4GzxCQ8BmgveJ72xmyMfMSLarPprt6XrklbwK-_tw",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhv7dw8LBbMsCv9kv586cMlQBryS9N16uYov7WUD7Mbc1QBEkyd7o1Tf1013cK2ZjzDJu2uYY3WF5w-iQkYUeu4tKg9DR1vjDtJ9vRcA"
+      }
+    ],
+    "arrival": [
+      { "airport": { "id": "PEK", "name": "Beijing Capital International Airport" }, "city": "Beijing", "country": "China", "country_code": "CN",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9v_tNYxaummsU2qbFn8zuYzkcG0x6qCvqB2gbBnx-2FVlZZPsnkvUXGk07vxotk-0vRQMUYCjj2d4Wg",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzsj_yw6o3vb8i54_D21VgI5rTohxexQkZ0TrZKDKJwTSKw2yqnRYLoIcBWIY50BlHo-OPMm68zbUO-qnFvmQmm6jvtWPwo7WOzjNGX_A"
+      }
+    ]
+  }
+]
+}
