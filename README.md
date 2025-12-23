@@ -1,4 +1,4 @@
-✈️ Flight Search Web App
+Flight Search Web App
 
 A modern, web-based flight search application that helps users explore and compare airline travel options with a clean interface, real-time data, and automated UI testing.
 
@@ -33,19 +33,19 @@ Testing	Selenium WebDriver (Python)
 📂 Project Structure
 FLIGHT-SEARCH-WEB-APP/
 │
-├── index.html          # Main HTML entry point
-├── styles.css          # Application styling
-├── app.jsx             # React application logic
-├── airportCodes.json   # Airport and IATA code data
-├── example.json        # Demo API response
-├── server.py           # Python proxy server
-├── test_flight_search.py  # Selenium tests
+├── index.html               # Main HTML entry point
+├── styles.css               # Application styling
+├── app.jsx                  # React application logic
+├── airportCodes.json        # Airport and IATA code data
+├── example.json             # Demo API response
+├── server.py                # Python proxy server
+├── test_flight_search.py    # Selenium tests
 └── README.md
 
 🚀 Getting Started
 ✅ Prerequisites
 
-Python 3.7+
+Python 3.7 or higher
 
 Google Chrome (for Selenium tests)
 
@@ -60,7 +60,7 @@ Start the local server:
 python server.py
 
 
-Open your browser and go to:
+Open your browser and navigate to:
 
 http://127.0.0.1:8080/index.html
 
@@ -81,9 +81,9 @@ Useful for demos, testing, and avoiding API quota limits
 
 Selenium is used to test key user flows and UI behavior.
 
-Run the Tests
+▶️ Run the Tests
 
-Ensure the server is running:
+Ensure the local server is running:
 
 python server.py
 
@@ -92,7 +92,7 @@ In a separate terminal:
 
 python test_flight_search.py
 
-Tests Validate
+✔ Tests Validate
 
 Successful loading of flight data
 
@@ -104,7 +104,7 @@ Proper UI behavior without errors
 
 API keys are exposed only for development purposes
 
-In production, all API requests should be handled server-side
+In production, API requests should be handled server-side
 
 CORS policies are intentionally relaxed for local development
 
