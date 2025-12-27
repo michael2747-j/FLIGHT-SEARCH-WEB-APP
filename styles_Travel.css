@@ -1,0 +1,310 @@
+/* ============================================================
+   THEME VARIABLES – CLOUDY BLUE + LIGHT BLUE ACCENTS
+   ============================================================ */
+:root {
+  --bg-top: #9fb7e5;        /* darker cloudy blue */
+  --bg-bottom: #d8e4f9;     /* lighter cloudy blue */
+  --card: #ffffff;
+  --border: #c9d6e4;
+  --ink: #f7f9ff;           /* general text on background */
+  --muted: rgba(247, 249, 255, 0.8);
+
+  --accent: #4a8dff;        /* main light blue accent */
+  --accent-soft: rgba(74, 141, 255, 0.18);
+}
+
+/* ============================================================
+   GLOBAL BASE
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+  color: var(--ink);
+}
+
+/* Optional wrapper if you use .page */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HEADER & TEXT
+   ============================================================ */
+h1, h2, h3, h4 {
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.note,
+p {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.tiny {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ============================================================
+   FORM STYLING
+   ============================================================ */
+form {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(10, 20, 40, 0.15);
+  color: #24324a;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #31507a;
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+input,
+select {
+  background: #f8faff;
+  color: #24324a;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* BUTTONS */
+button {
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease, box-shadow 0.15s ease;
+}
+
+button.primary,
+#search-btn {
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+button.primary:hover,
+#search-btn:hover {
+  background: #3a79dd;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ============================================================
+   RESULTS CONTAINERS
+   ============================================================ */
+.results {
+  margin-top: 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.section {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(10, 20, 40, 0.15);
+  color: #24324a;
+  margin-top: 20px;
+}
+
+.section h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #2f4d80;
+}
+
+/* cards stacked vertically */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ============================================================
+   FLIGHT CARDS
+   ============================================================ */
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  color: #24324a;
+}
+
+/* header strip with option title + price */
+.card-header {
+  padding: 14px 18px;
+  background: #eef3ff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2f4d80;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--accent);   /* light blue price */
+}
+
+/* card body */
+.card-body {
+  padding: 16px 18px;
+}
+
+/* simple grid used at top of card body sometimes */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 8px;
+}
+
+/* ============================================================
+   FLIGHT LEG ROWS
+   ============================================================ */
+.flight-leg {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-top: 1px dashed #dde3f0;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.airline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.airline img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.meta {
+  font-size: 12px;
+  color: #4b607f;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* pills for CO2, duration, etc. now light blue */
+.pill {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   AIRPORT CARDS
+   ============================================================ */
+.airport-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.airport-card {
+  background: #f6f8ff;
+  border-radius: 16px;
+  border: 1px solid #dde3f5;
+  padding: 14px;
+}
+
+.airport-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ============================================================
+   MISC / UTILITIES
+   ============================================================ */
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #ffecec;
+  color: #8a1f1f;
+  border: 1px solid #f5bcbc;
+  font-size: 13px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccd4e8;
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: -3px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+details summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+

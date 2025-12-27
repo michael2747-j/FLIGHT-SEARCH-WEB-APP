@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Airline Travel Assistant</title>
+  <link rel="stylesheet" href="styles_Travel.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div>
+        <h1>Airline Travel Assistant</h1>
+        <p class="note">
+          Search and compare flights from multiple airlines. Prices and options are retrieved in real time.
+        </p>
+      </div>
+      <div class="header-badge">
+        <span class="kbd">Demo</span>
+        <span class="tiny">Powered by Google Flights via SerpAPI</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <!-- Left column: search form -->
+      <section class="layout-left">
+        <div class="panel">
+          <h2 class="panel-title">Plan your trip</h2>
+          <p class="panel-subtitle tiny">
+            Start by choosing departure, destination, dates, and currency. Airport suggestions are based on real IATA codes.
+          </p>
+
+          <form id="search-form" class="search-form">
+            <div class="field">
+              <label for="from">From</label>
+              <input
+                id="from"
+                name="from"
+                list="airports"
+                placeholder="City or airport"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="to">To</label>
+              <input
+                id="to"
+                name="to"
+                list="airports"
+                placeholder="City or airport"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="out">Departure date</label>
+              <input id="out" name="out" type="date" required />
+            </div>
+
+            <div class="field">
+              <label for="ret">Return date</label>
+              <input id="ret" name="ret" type="date" required />
+            </div>
+
+            <div class="field">
+              <label for="currency">Currency</label>
+              <select id="currency" name="currency">
+                <option value="USD">USD $</option>
+                <option value="CAD" selected>CAD $</option>
+                <option value="EUR">EUR €</option>
+                <option value="GBP">GBP £</option>
+              </select>
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="btn primary">Search flights</button>
+              <button type="button" id="load-example" class="btn ghost">
+                Load example data
+              </button>
+              <span id="status" class="status tiny"></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel panel-hint">
+          <h3 class="tiny">Tips</h3>
+          <ul class="tiny">
+            <li>Try large airports first if no flights are found.</li>
+            <li>Use different currencies to explore price differences.</li>
+            <li>Filters and sorting appear once results are loaded.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right column: React results -->
+      <section class="layout-right">
+        <!-- Datalist for airport autocomplete (used by app.jsx) -->
+        <datalist id="airports"></datalist>
+
+        <!-- React root: app.jsx renders into this -->
+        <div id="root"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="tiny">
+        This prototype is for educational use only. Real prices and availability may differ from actual booking sites.
+      </span>
+    </footer>
+  </div>
+
+  <!-- React + ReactDOM UMD builds -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel so we can load JSX directly from app.jsx -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Your React application -->
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
