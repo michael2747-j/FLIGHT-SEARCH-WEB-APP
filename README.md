@@ -21,7 +21,7 @@ This repository serves as a <strong>learning resource</strong> and a <strong>por
 </tr>
 </table>
 
-Project Goal
+###Project Goal
 <table>
 <tr>
 <td>
