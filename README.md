@@ -1,129 +1,72 @@
-# FLIGHT-SEARCH-WEB-APP
-Personal project showcasing a flight search web application with real-time API integration, responsive UI design, and automated Selenium testing.
-=======
 Flight Search Web App
+<table> <tr> <td> <h3>Flight Search Web App</h3> <p> <strong>A lightweight full-stack flight search application built for learning and portfolio use.</strong><br/> Designed to demonstrate API integration, client-server communication, and automated UI testing using a clean and approachable architecture. </p> </td> </tr> </table>
+What Is This Project
 
-A modern, web-based flight search application that helps users explore and compare airline travel options with a clean interface, real-time data, and automated UI testing.
+The Flight Search Web App is a small full-stack web application that simulates the core functionality of popular flight comparison platforms. It allows users to search for flights between two destinations, compare prices and travel details, and switch between currencies using live flight data.
 
-🌍 Overview
+The project combines a browser-based front end with a local Python proxy server that securely fetches flight data from an external API while avoiding common browser limitations such as CORS restrictions. Automated Selenium tests are included to validate core user-facing functionality.
 
-The Flight Search Web App is a personal project designed to simulate the core functionality of popular flight comparison platforms. It allows users to search for flights between two destinations, view pricing and travel details, and compare options in different currencies.
+This repository is intended as a learning resource and a portfolio-ready example of a simple but realistic full-stack application.
 
-The application combines a responsive front end with a lightweight Python proxy server to securely fetch flight data and avoid browser CORS limitations. It also includes automated Selenium tests to verify critical user-facing functionality.
+Project Goal
 
-✨ Key Features
+Build a simple, understandable full-stack application that demonstrates how front-end interfaces, backend services, and third-party APIs work together.
 
-🔍 Search flights by origin, destination, and travel dates
+The goal is not to replicate a production flight booking system, but to provide a clean foundation that can be forked, extended, and customized by developers learning full-stack development.
 
-💰 View prices, durations, layovers, and airline details
+Core Architecture
+Component	Description
+Frontend	HTML, CSS, and JavaScript with React loaded via CDN
+Backend	Python-based local proxy server
+External API	Google Flights data accessed through SerpAPI
+Testing	Selenium WebDriver with Python
+Key Features
 
-🌐 Currency selector for easy international price comparison
+Flight search by origin, destination, and travel dates
 
-🧾 Clear, card-based flight result layout
+Dynamic rendering of prices, durations, airlines, and layovers
 
-📱 Responsive design for desktop and mobile
+Currency selector for international price comparison
 
-🧪 Automated UI testing with Selenium
+Clean, card-based results layout with strong visual hierarchy
 
-🧩 Demo mode using static example data
+Responsive design for desktop and mobile
 
-🛠️ Tech Stack
-Layer	Technologies
-Frontend	HTML, CSS, JavaScript (React via CDN)
-Backend	Python (local proxy server)
-API	Google Flights (via SerpAPI)
-Testing	Selenium WebDriver (Python)
-📂 Project Structure
-FLIGHT-SEARCH-WEB-APP/
-│
-├── index.html               # Main HTML entry point
-├── styles.css               # Application styling
-├── app.jsx                  # React application logic
-├── airportCodes.json        # Airport and IATA code data
-├── example.json             # Demo API response
-├── server.py                # Python proxy server
-├── test_flight_search.py    # Selenium tests
-└── README.md
+Demo mode using static example data
 
-🚀 Getting Started
-✅ Prerequisites
+Automated UI testing for critical user flows
 
-Python 3.7 or higher
+Project Structure
+File	Purpose
+index.html	Application entry point
+styles.css	Layout, colors, and responsive styling
+app.jsx	Front-end logic and dynamic UI rendering
+airportCodes.json	Airport names and IATA code data
+example.json	Static API response for demo and testing
+server.py	Python proxy server for API requests
+test_flight_search.py	Selenium automated UI tests
+README.md	Project documentation
+Getting Started
+Prerequisites
+Requirement	Notes
+Python	Version 3.7 or higher
+Browser	Google Chrome recommended
+Selenium	Required for automated tests
 
-Google Chrome (for Selenium tests)
-
-Selenium installed:
+Install Selenium:
 
 pip install selenium
 
-▶️ Run the Application Locally
+Running the Application Locally
 
 Start the local server:
 
 python server.py
 
 
-Open your browser and navigate to:
+Open a browser and navigate to:
 
 http://127.0.0.1:8080/index.html
 
 
-When searching, select airports from the dropdown suggestions or enter valid 3-letter IATA codes (e.g., YYZ, JFK).
-
-🧪 Demo Mode
-
-The app includes an example.json file that simulates a successful API response.
-
-Click Load example data
-
-Instantly view flight results without making live API calls
-
-Useful for demos, testing, and avoiding API quota limits
-
-🤖 Automated Testing
-
-Selenium is used to test key user flows and UI behavior.
-
-▶️ Run the Tests
-
-Ensure the local server is running:
-
-python server.py
-
-
-In a separate terminal:
-
-python test_flight_search.py
-
-✔ Tests Validate
-
-Successful loading of flight data
-
-Rendering of flight cards with visible pricing
-
-Proper UI behavior without errors
-
-🔐 Security Notes
-
-API keys are exposed only for development purposes
-
-In production, API requests should be handled server-side
-
-CORS policies are intentionally relaxed for local development
-
-🔮 Future Enhancements
-
-⭐ Airline ratings and reviews
-
-🎒 Baggage allowance and refund policy details
-
-☁️ Weather and travel disruption alerts
-
-❤️ Save and compare favorite flights
-
-🌐 Hosted backend deployment (Render, Railway, etc.)
-
-📄 License
-
-This project is for personal and educational use.
->>>>>>> master
+Select airports from the dropdown suggestions or enter valid three-letter IATA codes such as YYZ or JFK.
