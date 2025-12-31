@@ -1,4 +1,3 @@
-Flight Search Web App
 <table> <tr> <td> <h3>Flight Search Web App</h3> <p> <strong>A lightweight full-stack flight search application built for learning and portfolio use.</strong><br/> Designed to demonstrate API integration, client-server communication, and automated UI testing using a clean and approachable architecture. </p> </td> </tr> </table>
 What Is This Project
 
